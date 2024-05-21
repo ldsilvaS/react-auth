@@ -1,6 +1,6 @@
 import './style.css'
 import workFlow from '../../assets/dashboard.png'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../services/FirebaseConfig';
@@ -9,6 +9,7 @@ function Login() {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const navigate = useNavigate();
 
     const [error, setError] = useState('')
 
@@ -18,7 +19,7 @@ function Login() {
         setError('')
 
         signInWithEmailAndPassword(auth, email, password)
-        .then(() => console.log('Logado com sucesso.'))
+        .then(() => navigate('/home') )
         .catch((err) => setError(err.message))
 
     }
