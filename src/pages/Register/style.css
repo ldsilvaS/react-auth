@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.container img {
+    width: 180px;
+    padding: 5px 8px;
+    background: rgba(0, 0, 255, 0.553);
+    border-radius: 5px;
+}
+
+.container .text-info {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+
+}
+
+.container form .div-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.container form .div-input label {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.container form .div-input .email {
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(135, 135, 165);
+}
+
+.container form .div-input .password {
+    height: 50px;
+    padding: 0px 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid rgb(135, 135, 165);
+}
+
+.container form .text-info-senha {
+    margin-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(137, 137, 214);
+}
+
+.container form .button {
+    margin-top: 10px;
+    padding: 15px 0px;
+    font-size: 1.0em;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: rgb(83, 83, 201);
+    color: #fbfbfb;
+}
+
+.container form .form-footer {
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.container form .form-footer p {
+    font-size: 1.1em;
+}
+
+.container form .form-footer a {
+    font-size: 1.1em;
+    color: rgb(137, 137, 214);
+}
+
+.error {
+    padding: 10px 10px;
+    font-weight: 600;
+    background: rgb(251, 180, 180);
+    border-radius: 8px;
+    transition: 0.5s;
+}
